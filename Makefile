@@ -9,7 +9,7 @@ pingpong: switch.o pingpong.c
 pingpongpang: switch.o pingpongpang.c  
 	$(CC) $(CFLAGS) -o $@  $^
 
-switch.o: switch.c
+%.o: %.c
 	$(CC) $(CFLAGS) -c $^
 
 clean:
